@@ -13,6 +13,7 @@ import {
 import { useCms, buildWhatsAppLink } from "../lib/store";
 import { loc } from "../lib/i18n";
 import Reveal from "../components/Reveal";
+import { img } from "../lib/images";
 
 export default function Contact() {
   const { state, lang, t } = useCms();
@@ -72,7 +73,7 @@ export default function Contact() {
         <div
           className="absolute inset-0 opacity-15"
           style={{
-            backgroundImage: "url(/images/cat-recovery.jpg)",
+            backgroundImage: `url(${img("cat-recovery")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

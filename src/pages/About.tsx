@@ -5,6 +5,7 @@ import { loc } from "../lib/i18n";
 import Reveal from "../components/Reveal";
 import TrustBadges from "../components/TrustBadges";
 import SectionHeading from "../components/SectionHeading";
+import { img } from "../lib/images";
 
 export default function About() {
   const { state, lang, t } = useCms();
@@ -39,8 +40,8 @@ export default function About() {
       icon: MapPin,
       title: { fr: "Ancrage Local", ar: "جذور محلية" },
       text: {
-        fr: "Showroom et atelier à Baraki (Alger), livraison et installation sur les 58 wilayas.",
-        ar: "معرض وورشة في براقي (الجزائر)، توصيل وتركيب في 58 ولاية.",
+        fr: "Showroom et atelier à Baraki (Alger), livraison et installation sur les 69 wilayas.",
+        ar: "معرض وورشة في براقي (الجزائر)، توصيل وتركيب في 69 ولاية.",
       },
     },
   ];
@@ -52,7 +53,7 @@ export default function About() {
         <div
           className="absolute inset-0 opacity-25"
           style={{
-            backgroundImage: "url(/images/about-workshop.jpg)",
+            backgroundImage: `url(${img("about-workshop")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -80,12 +81,12 @@ export default function About() {
           <Reveal>
             <div className="relative">
               <img
-                src="/images/hero-dual-4x4.jpg"
+                src={img("hero-dual-4x4")}
                 alt="Dahra Motors 4x4 fleet"
                 className="rounded-lg object-cover shadow-2xl"
               />
               <div className="absolute -bottom-6 -end-4 rounded-lg border border-brand/40 bg-surface px-6 py-4 shadow-2xl sm:-end-6">
-                <div className="font-display text-3xl font-extrabold text-brand">58</div>
+                <div className="font-display text-3xl font-extrabold text-brand">69</div>
                 <div className="text-xs uppercase tracking-widest text-muted">
                   {loc(content.stats[0].label, lang)}
                 </div>

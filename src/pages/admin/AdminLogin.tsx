@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Lock, ShieldCheck, Eye, EyeOff, ArrowLeft } from "lucide-react";
 import { useCms } from "../../lib/store";
+import { img } from "../../lib/images";
 
 export default function AdminLogin() {
   const { login, state, t } = useCms();
@@ -25,7 +26,7 @@ export default function AdminLogin() {
       <div
         className="absolute inset-0 opacity-15"
         style={{
-          backgroundImage: "url(/images/hero-dual-4x4.jpg)",
+          backgroundImage: `url(${img("hero-dual-4x4")})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

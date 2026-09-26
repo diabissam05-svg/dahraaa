@@ -18,6 +18,7 @@ import ProductCard from "../components/ProductCard";
 import VideoBackground from "../components/VideoBackground";
 import VideoSectionBanner from "../components/VideoSectionBanner";
 import { useCodModal } from "../components/useCodModal";
+import { img } from "../lib/images";
 
 export default function Home() {
   const { state, lang, t } = useCms();
@@ -168,7 +169,7 @@ export default function Home() {
         <div
           className="absolute inset-0 opacity-15"
           style={{
-            backgroundImage: "url(/images/hero-mud.jpg)",
+            backgroundImage: `url(${img("hero-mud")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -330,7 +331,7 @@ export default function Home() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: "url(/images/hero-desert.jpg)",
+            backgroundImage: `url(${img("hero-desert")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "scroll",

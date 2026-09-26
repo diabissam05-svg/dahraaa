@@ -15,8 +15,8 @@ const dict = {
   "nav.gallery": { fr: "Nos Projets", ar: "مشاريعنا" },
 
   "topbar.official": {
-    fr: "★ Distributeur Officiel Ironman 4x4 — Livraison 58 Wilayas — Paiement à la Livraison",
-    ar: "★ الموزع الرسمي لآيرون مان 4x4 — توصيل 58 ولاية — الدفع عند الاستلام",
+    fr: "★ Distributeur Officiel Ironman 4x4 — Livraison 69 Wilayas — Paiement à la Livraison",
+    ar: "★ الموزع الرسمي لآيرون مان 4x4 — توصيل 69 ولاية — الدفع عند الاستلام",
   },
 
   "hero.scroll": { fr: "Défiler", ar: "مرر للأسفل" },

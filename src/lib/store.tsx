@@ -117,9 +117,10 @@ function loadState(): CmsState {
           ...parsed.settings,
           social: { ...DEFAULT_STATE.settings.social, ...parsed.settings?.social },
         };
-        if (!Array.isArray(merged.phones) || merged.phones.length === 0) {
-          merged.phones = [merged.phone];
-        }
+        // Force the official contact phone on every device, regardless of
+        // any previously saved (possibly edited) value.
+        merged.phone = DEFAULT_STATE.settings.phone;
+        merged.phones = [DEFAULT_STATE.settings.phone];
         if (!merged.mapLink) merged.mapLink = DEFAULT_STATE.settings.mapLink;
         return merged;
       })(),

@@ -4,6 +4,7 @@ import { Palette, RotateCcw, MessageCircle, Move } from "lucide-react";
 import { useCms, buildWhatsAppLink } from "../lib/store";
 import { formatPrice, loc } from "../lib/i18n";
 import Reveal from "../components/Reveal";
+import { img } from "../lib/images";
 
 interface Base {
   id: string;
@@ -13,9 +14,9 @@ interface Base {
 }
 
 const BASES: Base[] = [
-  { id: "hilux", name: "Toyota Hilux", image: "/images/viz-base-hilux.png" },
-  { id: "ranger", name: "Ford Ranger", image: "/images/viz-base-ranger.png" },
-  { id: "patrol", name: "Nissan Patrol", image: "/images/viz-base-patrol.png", isSuv: true },
+  { id: "hilux", name: "Toyota Hilux", image: img("viz-base-hilux") },
+  { id: "ranger", name: "Ford Ranger", image: img("viz-base-ranger") },
+  { id: "patrol", name: "Nissan Patrol", image: img("viz-base-patrol"), isSuv: true },
 ];
 
 interface OverlayPos {
@@ -34,7 +35,7 @@ interface Accessory {
 const ACCESSORIES: Accessory[] = [
   {
     id: "bullbar",
-    image: "/images/viz-acc-bullbar.png",
+    image: img("viz-acc-bullbar"),
     productId: "p-bullbar-hilux",
     presets: {
       hilux: { x: 7, y: 42, w: 15 },
@@ -44,7 +45,7 @@ const ACCESSORIES: Accessory[] = [
   },
   {
     id: "tent",
-    image: "/images/viz-acc-tent.png",
+    image: img("viz-acc-tent"),
     productId: "p-rooftop-tent",
     presets: {
       hilux: { x: 42, y: 15, w: 32 },
@@ -54,7 +55,7 @@ const ACCESSORIES: Accessory[] = [
   },
   {
     id: "led",
-    image: "/images/viz-acc-ledbar.png",
+    image: img("viz-acc-ledbar"),
     productId: "p-led-bar",
     presets: {
       hilux: { x: 9, y: 34, w: 12 },
@@ -145,7 +146,7 @@ export default function Visualizer() {
         <div
           className="absolute inset-0 opacity-15"
           style={{
-            backgroundImage: "url(/images/cat-roofrack.jpg)",
+            backgroundImage: `url(${img("cat-roofrack")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

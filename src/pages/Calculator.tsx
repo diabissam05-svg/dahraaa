@@ -17,6 +17,7 @@ import { VEHICLE_DATABASE } from "../lib/data";
 import type { Localized, Product } from "../lib/types";
 import Reveal from "../components/Reveal";
 import { useCodModal } from "../components/useCodModal";
+import { img } from "../lib/images";
 
 interface Accessory {
   id: string;
@@ -99,7 +100,7 @@ export default function Calculator() {
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: "url(/images/cat-suspension.jpg)",
+            backgroundImage: `url(${img("cat-suspension")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

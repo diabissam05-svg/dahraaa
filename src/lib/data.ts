@@ -1,4 +1,5 @@
 import type { CmsState, Product, Category, HeroSlide, GalleryItem, VideoSection } from "./types";
+import { img } from "./images";
 
 export const WILAYAS = [
   "01 - Adrar", "02 - Chlef", "03 - Laghouat", "04 - Oum El Bouaghi", "05 - Batna",
@@ -70,7 +71,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-suspension",
     slug: "suspension",
     name: { fr: "Suspension & Lift Kits", ar: "نظام التعليق ورفعات الهيكل" },
-    image: "/images/cat-suspension.jpg",
+    image: img("cat-suspension"),
     description: {
       fr: "Amortisseurs Foam Cell Pro, ressorts et kits complets Ironman 4x4.",
       ar: "ممتصات صدمات فوم سيل برو، نوابض وأطقم كاملة من آيرون مان 4x4.",
@@ -81,7 +82,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-protection",
     slug: "protection",
     name: { fr: "Bull Bars & Protection", ar: "مصاعد أمامية وحماية" },
-    image: "/images/cat-bullbar.jpg",
+    image: img("cat-bullbar"),
     description: {
       fr: "Pare-buffles acier, protections soubassement et side steps.",
       ar: "مصاعد فولاذية أمامية، حماية الهيكل السفلي ودرجات جانبية.",
@@ -92,7 +93,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-roof",
     slug: "roof-racks",
     name: { fr: "Roof Racks & Tentes", ar: "حاملات السقف والخيام" },
-    image: "/images/cat-roofrack.jpg",
+    image: img("cat-roofrack"),
     description: {
       fr: "Galeries aluminium, tentes de toit et auvents Ironman 4x4.",
       ar: "حاملات ألمنيوم للسقف، خيام سقف ومظلات آيرون مان 4x4.",
@@ -103,7 +104,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-snorkel",
     slug: "snorkels",
     name: { fr: "Snorkels & Admission", ar: "أنابيب الغطس والسحب" },
-    image: "/images/cat-snorkel.jpg",
+    image: img("cat-snorkel"),
     description: {
       fr: "Snorkels haute performance pour traversées et pistes sablonneuses.",
       ar: "أنابيب غطس عالية الأداء لعبور الأنهار والمسالك الرملية.",
@@ -114,7 +115,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-recovery",
     slug: "recovery",
     name: { fr: "Récupération & Treuils", ar: "معدات الإنقاذ والونشات" },
-    image: "/images/cat-recovery.jpg",
+    image: img("cat-recovery"),
     description: {
       fr: "Treuils, sangles, crics et kits de récupération tout-terrain.",
       ar: "ونشات، أحزمة سحب، روافع وأطقم إنقاذ للطرق الوعرة.",
@@ -125,7 +126,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-camping",
     slug: "camping",
     name: { fr: "Camping & Overlanding", ar: "التخييم ورحلات الأوفرلاند" },
-    image: "/images/cat-camping.jpg",
+    image: img("cat-camping"),
     description: {
       fr: "Réfrigérateurs portables, auvents et équipement de bivouac.",
       ar: "ثلاجات محمولة، مظلات ومعدات التخييم.",
@@ -136,7 +137,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-lighting",
     slug: "lighting",
     name: { fr: "Éclairage & Électrique", ar: "الإضاءة والكهرباء" },
-    image: "/images/cat-lighting.jpg",
+    image: img("cat-lighting"),
     description: {
       fr: "Barres LED, batteries AGM double système et compresseurs.",
       ar: "أشرطة إضاءة LED، بطاريات AGM مزدوجة ومضخات هواء.",
@@ -147,7 +148,7 @@ export const DEFAULT_CATEGORIES: Category[] = [
     id: "cat-tires",
     slug: "wheels-tires",
     name: { fr: "Roues & Pneumatiques", ar: "العجلات والإطارات" },
-    image: "/images/cat-tires.jpg",
+    image: img("cat-tires"),
     description: {
       fr: "Jantes alliage tout-terrain et pneus All-Terrain / Mud-Terrain.",
       ar: "جنوط ألمنيوم للطرق الوعرة وإطارات All-Terrain / Mud-Terrain.",
@@ -184,7 +185,7 @@ export const DEFAULT_HERO: HeroSlide[] = [
   {
     id: "slide-1",
     mediaType: "image",
-    image: "/images/hero-dual-4x4.jpg",
+    image: img("hero-dual-4x4"),
     videoUrl: "",
     videoPoster: "",
     autoplay: true,
@@ -208,7 +209,7 @@ export const DEFAULT_HERO: HeroSlide[] = [
   {
     id: "slide-2",
     mediaType: "image",
-    image: "/images/hero-mud.jpg",
+    image: img("hero-mud"),
     videoUrl: "",
     videoPoster: "",
     autoplay: true,
@@ -229,14 +230,14 @@ export const DEFAULT_HERO: HeroSlide[] = [
   {
     id: "slide-3",
     mediaType: "image",
-    image: "/images/hero-desert.jpg",
+    image: img("hero-desert"),
     videoUrl: "",
     videoPoster: "",
     autoplay: true,
     muted: true,
     badge: {
-      fr: "Livraison 58 Wilayas — Paiement à la Livraison",
-      ar: "توصيل إلى 58 ولاية — الدفع عند الاستلام",
+      fr: "Livraison 69 Wilayas — Paiement à la Livraison",
+      ar: "توصيل إلى 69 ولاية — الدفع عند الاستلام",
     },
     title: { fr: "L'AVENTURE COMMENCE ICI", ar: "المغامرة تبدأ هنا" },
     subtitle: {
@@ -261,8 +262,8 @@ export const DEFAULT_GALLERY: GalleryItem[] = [
       ar: "تم تركيب طقم فوم سيل برو والمصعد الفولاذي وخيمة السقف في يومين لدى الضهرة موتورز. السيارة لا تُعرف — دبابة رحلات حقيقية وراحة مذهلة على المسالك.",
     },
     rating: 5,
-    beforeImage: "/images/about-workshop.jpg",
-    afterImage: "/images/hero-dual-4x4.jpg",
+    beforeImage: img("about-workshop"),
+    afterImage: img("hero-dual-4x4"),
     videoSrc: "/videos/build-review.mp4",
     active: true,
   },
@@ -277,8 +278,8 @@ export const DEFAULT_GALLERY: GalleryItem[] = [
       ar: "حاملة ألمنيوم، مظلة باتوينغ وثلاجة 45 لتر: الرينجر جاهز للجنوب الكبير. فريق خبير وقطع أصلية 100% مع ضمان رسمي.",
     },
     rating: 5,
-    beforeImage: "/images/cat-suspension.jpg",
-    afterImage: "/images/cat-roofrack.jpg",
+    beforeImage: img("cat-suspension"),
+    afterImage: img("cat-roofrack"),
     videoSrc: "",
     active: true,
   },
@@ -293,8 +294,8 @@ export const DEFAULT_GALLERY: GalleryItem[] = [
       ar: "تعليق هيفي ديوتي، ونش 12000 رطل، شريط LED ومضخة هواء. ثلاث رحلات في العرق منذ ذلك الحين — بدون أي مشكلة. الضهرة موتورز هي المرجع لآيرون مان 4x4 في الجزائر.",
     },
     rating: 5,
-    beforeImage: "/images/cat-bullbar.jpg",
-    afterImage: "/images/hero-desert.jpg",
+    beforeImage: img("cat-bullbar"),
+    afterImage: img("hero-desert"),
     videoSrc: "",
     active: true,
   },
@@ -303,7 +304,7 @@ export const DEFAULT_GALLERY: GalleryItem[] = [
 export const DEFAULT_VIDEO_SECTION: VideoSection = {
   enabled: true,
   videoUrl: "/videos/build-review.mp4",
-  poster: "/images/cat-suspension.jpg",
+  poster: img("cat-suspension"),
   badge: {
     fr: "EXPÉRIENCE IMMERSIVE — TECHNOLOGIE MONOTUBE",
     ar: "تجربة غامرة — تقنية الأنبوب الأحادي",
@@ -343,8 +344,8 @@ export const DEFAULT_STATE: CmsState = {
       fr: "Sam - Jeu : 8h30 - 18h00 | Ven : fermé",
       ar: "السبت - الخميس: 8:30 - 18:00 | الجمعة: مغلق",
     },
-    headerLogo: "/images/logo-dahra.png",
-    footerLogo: "/images/logo-dahra.png",
+    headerLogo: img("logo-dahra"),
+    footerLogo: img("logo-dahra"),
     social: {
       facebook: "https://facebook.com/dahramotors4x4",
       instagram: "https://instagram.com/dahramotors4x4",
@@ -374,9 +375,9 @@ export const DEFAULT_STATE: CmsState = {
       fr: "Depuis notre showroom et atelier de Baraki (Alger), notre équipe d'experts certifiés conçoit, fournit et installe des solutions complètes : suspension Foam Cell Pro, protection acier, roof racks, tentes de toit et équipement overlanding — testés dans le désert australien, éprouvés sur les pistes du Sahara.",
       ar: "من معرضنا وورشتنا في براقي (الجزائر العاصمة)، يقوم فريقنا من الخبراء المعتمدين بتصميم وتوفير وتركيب حلول متكاملة: تعليق فوم سيل برو، حماية فولاذية، حاملات سقف، خيام سقف ومعدات أوفرلاند — مُختبرة في الصحراء الأسترالية ومُجرّبة على مسالك الصحراء الكبرى.",
     },
-    aboutImage: "/images/about-workshop.jpg",
+    aboutImage: img("about-workshop"),
     stats: [
-      { value: "58", label: { fr: "Wilayas livrées", ar: "ولاية نغطيها" } },
+      { value: "69", label: { fr: "Wilayas livrées", ar: "ولاية نغطيها" } },
       { value: "100%", label: { fr: "Pièces genuines", ar: "قطع أصلية" } },
       { value: "10+", label: { fr: "Années d'expertise", ar: "سنوات خبرة" } },
       { value: "5000+", label: { fr: "4x4 équipés", ar: "سيارة 4x4 جهزناها" } },
@@ -393,7 +394,7 @@ export const DEFAULT_STATE: CmsState = {
       },
       {
         icon: "shipping",
-        title: { fr: "Livraison 58 Wilayas", ar: "توصيل 58 ولاية" },
+        title: { fr: "Livraison 69 Wilayas", ar: "توصيل 69 ولاية" },
         text: {
           fr: "Expédition rapide partout en Algérie, paiement à la livraison.",
           ar: "شحن سريع لكل الجزائر، الدفع عند الاستلام.",

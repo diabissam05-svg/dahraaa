@@ -4,6 +4,7 @@ import { useCms } from "../lib/store";
 import { loc } from "../lib/i18n";
 import Reveal from "../components/Reveal";
 import type { GalleryItem } from "../lib/types";
+import { img } from "../lib/images";
 
 function BeforeAfter({ item, beforeLabel, afterLabel }: { item: GalleryItem; beforeLabel: string; afterLabel: string }) {
   const [pos, setPos] = useState(50);
@@ -64,7 +65,7 @@ export default function Gallery() {
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: "url(/images/cat-camping.jpg)",
+            backgroundImage: `url(${img("cat-camping")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

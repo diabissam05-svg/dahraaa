@@ -37,6 +37,7 @@ import {
   compressImage,
   inputCls,
 } from "./ui";
+import { img } from "../../lib/images";
 
 const uid = () => Math.random().toString(36).slice(2, 10);
 
@@ -213,7 +214,7 @@ function emptyProduct(categories: Category[]): Product {
     oldPrice: null,
     stock: 0,
     badge: "",
-    image: "/images/cat-suspension.jpg",
+    image: img("cat-suspension"),
     shortDescription: "",
     problem: "",
     solution: "",
@@ -486,7 +487,7 @@ export function CategoriesTab() {
               id: `cat-${uid()}`,
               slug: uid(),
               name: { fr: "", ar: "" },
-              image: "/images/cat-suspension.jpg",
+              image: img("cat-suspension"),
               description: { fr: "", ar: "" },
               active: true,
             })
@@ -563,7 +564,7 @@ export function HeroTab() {
             setEditing({
               id: `slide-${uid()}`,
               mediaType: "image",
-              image: "/images/hero-desert.jpg",
+              image: img("hero-desert"),
               videoUrl: "",
               videoPoster: "",
               autoplay: true,
@@ -1230,8 +1231,8 @@ export function GalleryTab() {
               wilaya: "16 - Alger",
               testimonial: { fr: "", ar: "" },
               rating: 5,
-              beforeImage: "/images/about-workshop.jpg",
-              afterImage: "/images/hero-dual-4x4.jpg",
+              beforeImage: img("about-workshop"),
+              afterImage: img("hero-dual-4x4"),
               videoSrc: "",
               active: true,
             })

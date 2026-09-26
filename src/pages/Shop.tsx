@@ -7,6 +7,7 @@ import ProductCard from "../components/ProductCard";
 import VehicleSelector from "../components/VehicleSelector";
 import { useCodModal } from "../components/useCodModal";
 import Reveal from "../components/Reveal";
+import { img } from "../lib/images";
 
 type SortKey = "featured" | "price-asc" | "price-desc" | "name";
 
@@ -129,7 +130,7 @@ export default function Shop() {
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: "url(/images/hero-dual-4x4.jpg)",
+            backgroundImage: `url(${img("hero-dual-4x4")})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
